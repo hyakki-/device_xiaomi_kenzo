@@ -12,22 +12,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+TARGET_BOOT_ANIMATION_RES := 1080x1920
+# Inherit some common Colt stuff.
+$(call inherit-product, vendor/colt/config/common.mk)
 
 $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := lineage_kenzo
+PRODUCT_NAME := colt_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
+COLT_DEVICE_MAINTAINER := Gigabyte
+EXTRA_FOD_ANIMATIONS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
