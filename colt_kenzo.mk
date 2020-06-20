@@ -31,7 +31,6 @@ PRODUCT_NAME := colt_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
-COLT_DEVICE_MAINTAINER := Gigabyte
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -43,4 +42,3 @@ BUILD_FINGERPRINT=Xiaomi/kenzo/kenzo:6.0.1/MMB29M/V8.2.1.0.MHOCNDL:user/release-
 
 # Product packages
 TARGET_USE_JELLY := true
-
