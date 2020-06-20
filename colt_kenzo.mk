@@ -15,11 +15,9 @@
 TARGET_BOOT_ANIMATION_RES := 1080x1920
 # Inherit some common Colt stuff.
 $(call inherit-product, vendor/colt/config/common.mk)
-
 $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
-
-# Inherit some common LineageOS stuff.
+# Inherit some common ColtOS stuff.
 $(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 
